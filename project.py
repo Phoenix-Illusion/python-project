@@ -184,13 +184,13 @@ if __name__ == '__main__':
 			query = query.replace("play", "")		
 			webbrowser.open(query)
 
-		elif "who i am" in query:
+		elif "who i am" in query or "who am i" in query:
 			speak("If you talk then definitely your human.")
 
-		elif "why you came to world" in query or "why you came to the world" in query:
+		elif "why you came to world" in query or "why you came to this world" in query:
 			speak("Thanks to Aman. further It's a secret")
 
-		elif 'PowerPoint presentation' in query or 'powerpoint presentation' in query:
+		elif 'PowerPoint presentation' in query or 'open powerpoint presentation' in query:
 			speak("opening Power Point presentation")
 			power = r"C:\\Program Files (x86)\\Microsoft Office\\root\\Office16\\POWERPNT.EXE"
 			os.startfile(power)
@@ -201,7 +201,7 @@ if __name__ == '__main__':
 		elif "who are you" in query:
 			speak("I am your virtual assistant created by Aman. ")
 
-		elif 'reason for you' in query:
+		elif 'reason for your existance' in query:
 			speak("I was created as a Minor project by Mister Aman. ")
 
 		elif 'change background' in query:
@@ -331,11 +331,11 @@ if __name__ == '__main__':
 			speak(assname)
 
 		# most asked question from google Assistant
-		elif "will you be my gf" in query or "will you be my bf" in query:
+		elif "will you be my girlfriend" in query or "will you be my gf" in query:
 			speak("I'm not sure about, may be you should give me some time")
 
 		elif "how are you" in query:
-			speak("I'm fine, glad you me that")
+			speak("I'm fine, glad you asked me that")
 
 		elif "i love you" in query:
 			speak("It's hard to understand")
